@@ -1,0 +1,166 @@
+.nav-link:hover {
+    background-color: grey;
+}
+
+.navbar-expand-lg {
+    background-color: #15B8A7;
+}
+
+.col-md-2 {
+    background-color: #245B56;
+}
+
+.author-profile {
+    width: 100%;
+    max-width: 250px;
+    position: relative;
+    margin-left: 15px;
+}
+
+
+/*.background img{width:100%;height:60%;}*/
+
+.background img {
+    width: 90%;
+    height: 190px;
+    top: 20px;
+    left: -10px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.author-title {
+    text-align: center;
+    margin-top: 5%;
+}
+
+.author-avatar {
+    width: 100%;
+    height: 70%;
+    bottom: 80%;
+    margin-bottom: 0%;
+    margin-top: 30%;
+    text-align: center;
+    margin: 0 auto;
+    position: absolute
+}
+
+.author-avatar img {
+    width: 100%;
+    max-width: 90px;
+    height: auto
+}
+
+.author-title {
+    top: 100%;
+    color: #fafafa;
+    width: 100%;
+}
+
+.block {
+    display: block;
+    width: 122%;
+    border: none;
+    background-color: #245B56;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.block1 {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #245B56;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.block3 {
+    display: block;
+    width: 98%;
+    border: none;
+    background-color: #d1d4d4;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 0px;
+}
+
+
+}
+.example {
+    margin-left: 0px;
+    text-align: left;
+}
+.btn {
+    margin-left: 90%;
+}
+.ltr {
+    background-color: aquamarine;
+}
+.sty {
+    margin-left: 85%;
+    margin-right: 15%;
+}
+.sty1 {
+    margin-right: 10%;
+    margin-left: 100%;
+    margin-top: 5%;
+}
+.styprofil {
+    margin-right: 50%;
+    margin-left: 45%;
+    margin-top: 0%;
+}
+.sty4 {
+    margin-right: 0%;
+    margin-left: 0%;
+    margin-top: 0%;
+}
+.sty2 {
+    margin-right: 100%;
+    margin-left: 30%;
+    margin-top: 10%;
+}
+.sty3 {
+    margin-right: 10%;
+}
+.teks {
+    text-align: center;
+    margin: 0 auto;
+    position: absolute
+}
+.jumbotron {
+    background: #000 url("img/6.jpg") center center;
+    margin-left: 0%;
+    margin-right: 0%;
+    width: 83%;
+    height: 100%;
+    background-size: cover;
+    overflow: hidden;
+}
+.table {
+    border-color: 0%;
+}
+.tgh {
+    margin-left: 50%;
+    margin-bottom: 2%;
+}
+.card {
+    margin-right: 0%;
+    width: 100%;
+    height: 95%;
+}
+.f {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.tgh1 {
+    margin-left: 45%;
+    margin-bottom: 2%;
+}
