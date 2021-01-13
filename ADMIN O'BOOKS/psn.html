@@ -15,6 +15,19 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <title>Admin 0'Books</title>
+<style>
+
+.modal-dialog {
+    max-width: 700px;
+    margin: 1.75rem auto;
+}
+
+.col-sm-3 {
+    flex: 0 0 auto;
+    width: 45%;
+    margin-left: 10px;
+}
+</style>
 </head>
 
 <body>
@@ -76,9 +89,6 @@
         <div class="col-md-10 p-5 pt-3">
             <button type="button" class="block1 text-white">DATA PESANAN
                 </button><br>
-            <div class="btn1">
-                <button class="btn btn-primary" data-toggle="modal" data-target="#tambah" type="submit"><i class="fas fa-plus"></i>Tambah</button>
-            </div><br>
             <table class="table table-bordered">
                 <thead>
                     <tr class="table-secondary">
@@ -134,55 +144,6 @@
     </div>
 
     </div>
-    <!-- The Modal Tambah-->
-    <div class="modal fade" id="tambah">
-        <div class="modal-dialog">
-            <div class="modal-content">
-
-                <!-- Modal Header -->
-                <div class="modal-header">
-                    <h4 class="modal-title">TAMBAH DATA PESANAN</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-
-
-                <!-- Modal body -->
-                <div class="modal-body">
-                    <form>
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">NO</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder=" ">
-                        </div><br>
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">JUDUL BUKU</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder=" ">
-                        </div><br>
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">KATEGORI</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder=" ">
-                        </div><br>
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">ID BUKU</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder=" ">
-                        </div><br>
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">TERJUAL</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder=" ">
-                        </div><br>
-
-                    </form>
-                </div>
-                <!-- Modal footer -->
-
-                <div class="tgh">
-                    <table border="0">
-                        <th> <button type="button" class="btn btn-danger" data-dismiss="modal">BATAL</button></th>
-                        <th> <button type="button" class="btn btn-success" data-dismiss="modal">SIMPAN</button></th>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-                </div></div></div>
     
        <!-- The Modal Detail-->
        <div class="modal fade" id="detail">
@@ -191,13 +152,15 @@
 
                 <!-- Modal Header -->
                 <div class="modal-header">
-                    <h4 class="modal-title">DETAIL DATA PESANAN</h4>
+                    <h4 class="modal-title">DETAIL PESANAN</h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
 
 
                 <!-- Modal body -->
-                <div class="modal-body">
+                <div class="row">
+                    <div class="col-sm-3">
+                    <h6 class="modal-title">DATA PESANAN</h6>
                     <form>
                         <div class="form-group">
                             <label for="exampleInputEmail1">NO</label>
@@ -219,17 +182,37 @@
                             <label for="exampleInputEmail1">TERJUAL</label>
                             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="1111">
                         </div><br>
-
                     </form>
-                </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                    <h6 class="modal-title">DATA TRANSAKSI</h6>
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">NO</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="1">
+                        </div><br>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">JUDUL BUKU</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Angles & Demons">
+                        </div><br>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">KATEGORI</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Umum">
+                        </div><br>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">ID BUKU</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="A01">
+                        </div><br>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">TERJUAL</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="1111">
+                        </div><br>
+                    </form></div></div>
                 <!-- Modal footer -->
 
-                <div class="tgh">
-                    <table border="0">
-                        <th> <button type="button" class="btn btn-primary" data-dismiss="modal">TUTUP</button></th>
-                        </tr>
-                        </tbody>
-                    </table>
+                <div class="tgh" style="margin-right: 15%;">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">TUTUP</button></th>
                 </div>
                 </div></div></div> 
     
@@ -244,44 +227,65 @@
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
 
+                <!-- Modal body -->
+                <div class="row">
+                    <div class="col-sm-3">
+                    <h6 class="modal-title">DATA PESANAN</h6>
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">NO</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="1">
+                        </div><br>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">JUDUL BUKU</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Angles & Demons">
+                        </div><br>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">KATEGORI</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Umum">
+                        </div><br>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">ID BUKU</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="A01">
+                        </div><br>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">TERJUAL</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="1111">
+                        </div><br>
+                    </form>
+                    </div>
 
-            <!-- Modal body -->
-            <div class="modal-body">
-                <form>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">NO</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="1">
-                    </div><br>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">JUDUL BUKU</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Angles & Demons">
-                    </div><br>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">KATEGORI</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Umum">
-                    </div><br>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">ID BUKU</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="A01">
-                    </div><br>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">TERJUAL</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="1111">
-                    </div><br>
+                    <div class="col-sm-3">
+                    <h6 class="modal-title">DATA TRANSAKSI</h6>
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">NO</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="1">
+                        </div><br>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">JUDUL BUKU</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Angles & Demons">
+                        </div><br>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">KATEGORI</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Umum">
+                        </div><br>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">ID BUKU</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="A01">
+                        </div><br>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">TERJUAL</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="1111">
+                        </div><br>
+                    </form></div></div>
+                <!-- Modal footer -->
 
-                </form>
-            </div>
-            <!-- Modal footer -->
-
-            <div class="tgh">
-                <table border="0">
-                    <th> <button type="button" class="btn btn-danger" data-dismiss="modal">BATAL</button></th>
-                    <th> <button type="button" class="btn btn-success" data-dismiss="modal">SIMPAN</button></th>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-            </div></div></div> 
+                <div class="tgh" style="margin-right: 15%;">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">TUTUP</button></th>
+                </div>
+                </div></div></div> 
+    
 
     <!-- delete modal-->
     <div id="id01" class="modal" >
